@@ -98,8 +98,8 @@ public class CounterStrike {
             System.out.println("Unfortunately, you had inputted wrong data. Please try again!");
             System.exit(0);
         }
-        double result1 = (player1+player2+player3+player4+player5)/5;
-        double result2 = (gamer1+gamer2+gamer3+gamer4+gamer5)/5;
+        double result1 = ((double) player1+player2+player3+player4+player5)/5;
+        double result2 = ((double)gamer1+gamer2+gamer3+gamer4+gamer5)/5;
         if (result1>result2){
             System.out.println("The winner is " +teamName1+ ", who scored "+result1+" points.");
         } else if (result1<result2){
