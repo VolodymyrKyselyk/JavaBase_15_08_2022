@@ -10,7 +10,7 @@ public class GuessNumberDoWhile {
         int number = (int) (Math.random() * range);
         System.out.println(number);
         System.out.println("Your turn:");
-        int yourNumber;
+        int yourNumber; int i = 1;
         do {
             if (sc.hasNextInt()) {
                 yourNumber = sc.nextInt();
@@ -26,8 +26,9 @@ public class GuessNumberDoWhile {
                 System.out.println("Wrong data, try again!");
             }
             sc.nextLine();
+            i++;
 
-        } while (true);
+        } while (i<=3);
 
     }
 
