@@ -27,8 +27,8 @@ public class Lottery {
         }
         Arrays.sort(plNo);
         System.out.println(Arrays.toString(plNo) + ".");
-        //definition amount of the same numbers
-        System.out.println("Amount of the same numbers: ");
+        //definition amount of the matched pairs
+        System.out.println("Amount of the matched pairs: ");
         int a = 0;
         for (int i = 0; i < coNo.length; i++) {
             if (coNo[i] == plNo[i]) {
@@ -46,6 +46,7 @@ public class Lottery {
                 System.out.print(i + " ");
             }
         }
+
 
     }
 
